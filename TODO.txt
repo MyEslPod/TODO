@@ -1,9 +1,8 @@
 1.0：
-判断是否是WIFI
 more
-删除确认
+
 online持久化。刷新时当前内容不消失
-option：线程数，重试次数，回退时间，wifi时是否自动下载。option持久化。
+option：线程数，重试次数，回退时间，wifi时是否自动下载，没有wifi时是否下载。option持久化。
 detail加同样option菜单。
 about
 手动拷贝mp3到MyEslPod下，在local也能看（增加刷新按钮）
@@ -19,7 +18,8 @@ DONE：
 先创建文件，让Download里有东西显示，然后再解析mp3 url，下载detail、mp3
 播放界面
 从local点击进入时，如果不是正在播放的文件，则重置所有状态，自动播放新的文件
-
+删除确认
+判断是否是WIFI
 
 
 
