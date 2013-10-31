@@ -2,10 +2,9 @@
 判断是否是WIFI
 more
 删除确认
-从local点击进入时，如果不是正在播放的文件，则重置所有状态，自动播放新的文件
 online持久化。刷新时当前内容不消失
 option：线程数，重试次数，回退时间，wifi时是否自动下载。option持久化。
-detail加同意菜单。
+detail加同样option菜单。
 about
 手动拷贝mp3到MyEslPod下，在local也能看（增加刷新按钮）
 处理没有内存卡的情况。
@@ -13,11 +12,13 @@ repeat的textview默认用gone，点击后才显示。
 左上角加图标
 repeat按钮设计成ImageButton
 记住上次播放的文件，在local里高亮显示。记住上次播放的位置。
+数字签名冲突的问题
 
 
 DONE：
 先创建文件，让Download里有东西显示，然后再解析mp3 url，下载detail、mp3
 播放界面
+从local点击进入时，如果不是正在播放的文件，则重置所有状态，自动播放新的文件
 
 
 
@@ -36,3 +37,6 @@ search
 边下边播
 手动拷贝到MyEslPod的mp3，支持补充下载detail
 循环方式选择
+处理网络变动
+发送用户体验报告
+广告
