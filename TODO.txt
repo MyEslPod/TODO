@@ -1,9 +1,7 @@
 1.0：
-当用户点击online、download的item，提示用户如何操作
 记住上次播放的文件，在local里高亮显示。记住上次播放的位置。
 more
 online持久化。刷新时当前内容不消失
-option：线程数，重试次数，回退时间，wifi时是否自动下载，没有wifi时是否下载。option持久化。
 处理没有内存卡的情况。
 about
 手动拷贝mp3到MyEslPod下，在local也能看（增加刷新按钮）
@@ -12,6 +10,7 @@ repeat按钮设计成ImageButton
 数字签名冲突的问题
 测试程序运行/播放时，接收短信、接打电话对程序的影响。
 repeat的textview默认用gone，点击后才显示。
+download item增加暂停按钮。download：全部暂停，全部开始
 
 
 DONE：
@@ -21,14 +20,13 @@ DONE：
 删除时确认
 判断是否是WIFI
 detail加同样option菜单。
-
-
+当用户点击online、download的item，提示用户如何操作
+option：线程数，重试等待时间，回退时间，wifi时是否自动下载，没有wifi时是否下载。option持久化。
 
 
 
 
 1.1：
-下载界面增加暂停按钮
 在桌面添加图标
 search
 如果textfile中只有mp3Url的地址，重新打开软件，如何正确处理使之下载
@@ -41,5 +39,7 @@ search
 发送用户体验报告
 广告
 避免程序被进程管理器杀死
-download：批量下载，全部暂停，全部开始
+批量下载
 拔耳机暂停播放
+点击加粗的单词，自动跳转到翻译
+如果文本文件里没有mp3的长度，需要重新获取
