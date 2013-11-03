@@ -1,44 +1,46 @@
-1.0��
-��ס�ϴβ��ŵ��ļ�����local�������ʾ����ס�ϴβ��ŵ�λ�á�
-more
-online�־û���ˢ��ʱ��ǰ���ݲ���ʧ
+﻿1.0：
+记住上次播放的文件，在local里高亮显示。记住上次播放的位置。
+online持久化。刷新时当前内容不消失
 about
-�ֶ�����mp3��MyEslPod�£���localҲ�ܿ�������ˢ�°�ť��
-���ϽǼ�ͼ��
-repeat��ť��Ƴ�ImageButton
-����ǩ����ͻ������
-���Գ�������/����ʱ�����ն��š��Ӵ�绰�Գ����Ӱ�졣
-repeat��textviewĬ����gone����������ʾ��
-download item������ͣ��ť��download��ȫ����ͣ��ȫ����ʼ
+手动拷贝mp3到MyEslPod下，在local也能看（增加刷新按钮?）
+左上角加图标
+repeat按钮设计成ImageButton
+数字签名冲突的问题
+测试程序运行/播放时，接收短信、接打电话对程序的影响。
+repeat的textview默认用gone，点击后才显示。
+download：全部暂停，全部开始
+减少了线程数，多出的下载不会自动暂停（而增加线程似乎没问题）
 
 
-DONE��
-�ȴ����ļ�����Download���ж�����ʾ��Ȼ���ٽ���mp3 url������detail��mp3
-���Ž���
-��local�������ʱ������������ڲ��ŵ��ļ�������������״̬���Զ������µ��ļ�
-ɾ��ʱȷ��
-�ж��Ƿ���WIFI
-detail��ͬ��option�˵���
-���û����online��download��item����ʾ�û���β���
-option���߳��������Եȴ�ʱ�䣬����ʱ�䣬wifiʱ�Ƿ��Զ����أ�û��wifiʱ�Ƿ����ء�option�־û���
-����û���ڴ濨�������
+DONE：
+先创建文件，让Download里有东西显示，然后再解析mp3 url，下载detail、mp3
+播放界面
+从local点击进入时，如果不是正在播放的文件，则重置所有状态，自动播放新的文件
+删除时确认
+判断是否是WIFI
+detail加同样option菜单。
+当用户点击online、download的item，提示用户如何操作
+option：线程数，重试等待时间，回退时间，wifi时是否自动下载，没有wifi时是否下载。option持久化。
+处理没有内存卡的情况。
+download item增加暂停按钮。
+more
 
 
-
-1.1��
-����������ͼ��
+1.1：
+在桌面添加图标
 search
-���textfile��ֻ��mp3Url�ĵ�ַ�����´������������ȷ����ʹ֮����
-���textfile��mp3UrlΪ�գ������»����
-�̳߳ء�����
-���±߲�
-�ֶ�������MyEslPod��mp3��֧�ֲ�������detail
-ѭ����ʽѡ��
-��������䶯
-�����û����鱨��
-���
-������򱻽��̹�����ɱ��
-��������
-�ζ�����ͣ����
-����Ӵֵĵ��ʣ��Զ���ת������
-����ı��ļ���û��mp3�ĳ��ȣ���Ҫ���»�ȡ
+如果textfile中只有mp3Url的地址，重新打开软件，如何正确处理使之下载
+如果textfile中mp3Url为空，则重新获得它
+线程池、加锁
+边下边播
+手动拷贝到MyEslPod的mp3，支持补充下载detail
+循环方式选择
+处理网络变动
+发送用户体验报告
+广告
+避免程序被进程管理器杀死
+批量下载
+拔耳机暂停播放
+点击加粗的单词，自动跳转到翻译
+如果文本文件里没有mp3的长度，需要重新获取
+
