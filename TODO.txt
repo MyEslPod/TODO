@@ -1,15 +1,14 @@
 ﻿1.0：
-online持久化。刷新时当前内容不消失
+repeat的textview默认用gone，点击后才显示。
+download：全部暂停，全部开始
 about
 左上角加图标
 repeat按钮设计成ImageButton
-数字签名冲突的问题
 测试程序运行/播放时，接收短信、接打电话对程序的影响。
-repeat的textview默认用gone，点击后才显示。
-download：全部暂停，全部开始
 减少了线程数，多出的下载不会自动暂停（而增加线程似乎没问题）
-在线播放
-Online一开始就显示下载checkbox、按钮
+bug：如果没插耳机运行模拟器。开始播放，日志里会显示MediaPlayer一直报错。看线程会显示不断创建线程。
+
+
 
 
 DONE：
@@ -28,9 +27,15 @@ more
 文件名是用ESLXXX.mp3还是用title.mp3？结论：使用title.mp3来保存。
 记住上次播放的文件，在local里高亮显示。记住上次播放的位置。
 用xml格式来保存文本，可以更好的支持扩展。
+数字签名冲突的问题
+bug：Detail里PlayingEpisode的变化未反映到Local的高亮项。
+online持久化。刷新时当前内容不消失
+Online一开始就显示下载checkbox、download按钮
+
 
 
 1.1：
+在线播放
 在桌面添加图标
 search
 如果xml文件中只有mp3Url的地址，重新打开软件，如何正确处理使之下载
@@ -44,9 +49,10 @@ search
 批量下载
 拔耳机暂停播放
 点击加粗的单词，自动跳转到翻译
-如果xml文件里没有mp3的长度，需要重新获取
 支持网站原始文件名（如ec358.mp3），复制到MyEslPod目录下，打开播放时，自动下载detail
 自动升级
+如果xml文件里没有mp3的长度，需要重新获取（其实不获取也行，就是不会在Download里显示，需要用户重新下载此episode）
+
 
 1.5
 边播放边下载
